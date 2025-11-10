@@ -58,10 +58,15 @@ class MenuButtonActions {
       true
     );
   }
-
+// TOUFIC'S COMMENT: Placeholder for the roving tabindex logic  ;)
   setFocusToMenuitem(newMenuitem) {
     this.menuitemNodes.forEach(function (item) {
-// TOUFIC'S COMMENT: Placeholder for the roving tabindex logic  ;)
+      if (item === newMenuitem) {
+          item.tabIndex = 0;
+          newMenuitem.focus();
+          } else {
+          item.tabIndex = -1;
+          }
     });
   }
 
