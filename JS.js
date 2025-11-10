@@ -58,8 +58,9 @@ class MenuButtonActions {
       true
     );
   }
-// TOUFIC'S COMMENT: Placeholder for the roving tabindex logic  ;)
+
   setFocusToMenuitem(newMenuitem) {
+    // TOUFIC'S COMMENT: Placeholder for the roving tabindex logic  ;)
     this.menuitemNodes.forEach(function (item) {
       if (item === newMenuitem) {
           item.tabIndex = 0;
